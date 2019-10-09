@@ -1,0 +1,62 @@
+<div class="container-fluid row">
+<div class=" col-md-6">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <h1>Personal Info</h1>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Dob</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <th > {{book.id}} </th>
+          <td> {{book.name}} </td>
+          <td> {{book.dob}} </td>
+          <td> {{book.address}} </td>
+          <td> {{book.phone}} </td>
+          <td>
+            <a routerLink="/edit/{{book.id}}" class="btn btn-sm btn-dark">Edit</a> | 
+            <a routerLink="/delete/{{book.id}}" class="btn btn-sm btn-danger">Delete</a>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <div class=" col-md-6">
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <h1>Educational Info</h1>
+          <tr>
+              <th scope="col">#</th>
+            <th scope="col" >Degree</th>
+            <th scope="col">Mark</th>
+            <th scope="col">Stream</th>
+            <th scope="col">College</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+              <th > {{book.id1}} </th>
+            <td> {{book.degree}} </td>
+            <td> {{book.mark}} </td>
+            <td> {{book.stream}} </td>
+            <td> {{book.college}} </td>
+            <td>
+              <a routerLink="/edit/{{book.id1}}" class="btn btn-sm btn-dark">Edit</a> | 
+              <a routerLink="/delete/{{book.id1}}" class="btn btn-sm btn-danger">Delete</a>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    </div>

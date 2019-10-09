@@ -1,0 +1,56 @@
+<div class="container">
+    <form (ngSubmit)="editData()" class="col-md-6">
+        <div class="form-group">
+            <h2>Edit</h2>
+        </div>
+  <div class="form-group">
+            <h2>Personal Info</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Name</label>
+            <input placeholder="Name of the Employee" class="form-control" type="text" name="name" [(ngModel)]="book.name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">DOB</label>
+            <input placeholder="Date of Birth" class="form-control" type="date" name="dob" [(ngModel)]="book.dob">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Address</label>
+            <input placeholder="Your Home address" class="form-control" type="text" name="address" [(ngModel)]="book.address">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone</label>
+            <input placeholder="Phone Number" class="form-control" type="number" name="phone" [(ngModel)]="book.phone">
+        </div>
+            <button class="btn btn-primary" type="submit">Edit Book</button>
+    </form>
+        </div>
+        <div class="container">
+        <form (ngSubmit)="editEdu()" class="col-md-6">
+                <div class="form-group">
+                    <h2>Edit</h2>
+                </div>
+        
+        <div class="form-group">
+                <h2>Educational Info</h2>
+            </div>
+     
+            <div class="form-group">
+                <label for="my-input">Degree</label>
+                <input placeholder="Degree" class="form-control" type="text" name="degree" [(ngModel)]="book.degree">
+            </div>
+            <div class="form-group">
+                <label for="my-input">Mark</label>
+                <input placeholder="Marks or CGPA obtained" class="form-control" type="number" name="mark" [(ngModel)]="book.mark">
+            </div>
+            <div class="form-group">
+                <label for="my-input">Stream</label>
+                <input placeholder="Stream" class="form-control" type="text" name="stream" [(ngModel)]="book.stream">
+            </div>
+            <div class="form-group">
+                <label for="my-input">College</label>
+                <input placeholder="Name of the College" class="form-control" type="text" name="college" [(ngModel)]="book.college">
+            </div>
+            <button class="btn btn-primary" type="submit">Edit Book</button>
+        </form>
+     </div>

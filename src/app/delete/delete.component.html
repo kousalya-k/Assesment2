@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="alert alert-danger" role="alert">
+        <h4>Confirm delete.</h4>
+        <form (ngSubmit)="deleteBook()">
+            <p>
+                Are you sure you want to delete {{book.name}}
+            </p>
+            <hr>
+            <p>
+                Please confirm your action.
+            </p>
+            <button type="submit" class="btn btn-danger btn-lg"  >
+                Yes
+                
+            </button>
+            <a routerLink="/list" class="btn btn-secondary btn-lg">Go Back to List</a>
+            <a routerLink="/list" class="btn btn-secondary btn-lg">No</a>
+        </form>
+    </div>
+</div>
+

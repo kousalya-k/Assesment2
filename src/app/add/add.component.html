@@ -1,0 +1,55 @@
+<div class="container">
+    
+    <form (ngSubmit)="createData()" >
+            
+        <div class="form-group">
+            <h2>New Employee</h2>
+        </div>
+        <div class="row">
+                <div class="col-md-6">
+  <div class="form-group">
+            <h2>Personal Info</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Name</label>
+            <input placeholder="Name of the Employee" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">DOB</label>
+            <input placeholder="Date of Birth" class="form-control" type="date" name="dob" [(ngModel)]="dob">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Address</label>
+            <input placeholder="Your Home address" class="form-control" type="text" name="address" [(ngModel)]="address">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone</label>
+            <input placeholder="Phone Number" class="form-control" type="number" name="phone" [(ngModel)]="phone">
+        </div></div>
+        <div class="col-md-6">
+        <div class="form-group">
+            <h2>Educational Info</h2>
+        </div>
+ 
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input placeholder="Degree" class="form-control" type="text" name="degree" [(ngModel)]="degree">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Mark</label>
+            <input placeholder="Marks or CGPA obtained" class="form-control" type="number" name="mark" [(ngModel)]="mark">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input placeholder="Stream" class="form-control" type="text" name="stream" [(ngModel)]="stream">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <input placeholder="Name of the College" class="form-control" type="text" name="college" [(ngModel)]="college">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Data</button>
+    </div>
+</div>
+    </form>
+ </div>
+ 
